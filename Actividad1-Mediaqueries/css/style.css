@@ -1,0 +1,466 @@
+/*************************************************MEDIAQUERY*/
+@import url("mediquery/mediaIndex-1300.css") screen and (min-width:1300px);
+
+/*************************************************GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'alieron';
+    src: url(font/aileron/Aileron-SemiBold.otf);
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'alieron', 'Geneva';
+}
+#contenedor{
+    margin: 0 auto;
+    width: 1200px;
+}
+/*************************************************HEADER*/
+header{
+    width: 100%;
+    background-color: rgb(56, 62, 70);
+}
+header>a>.logo{
+    width: 300px;
+}
+header>a>.logo>img{
+    width: 200px;
+    margin: 20px;
+}
+/*NAVEGDAOR*/
+nav{
+    padding-top: 5px;
+    min-height: 25px;
+    background-color: rgb(56, 62, 70);
+}
+nav>ul{
+    list-style: none;
+}
+nav>ul>li{
+    float: right;
+    margin: 0 10px;
+}
+nav>ul:last-child{
+    margin-right: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'alieron', 'Geneva';
+    display: block;
+}
+
+nav>ul>li>a .black{
+    display: block;
+}
+nav>ul>li>a .white{
+    display: none;
+}
+nav>ul>li>a:hover{
+    margin-right: 5px;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    color: rgb(19, 18, 16);
+}
+nav>ul>li>a:hover .black{
+    display: none;
+}
+nav>ul>li>a:hover .white{
+    display: block;
+}
+nav>ul>li>a img{
+    width: 20px;
+}
+/***************************************************************SECTION*/
+section{
+    width: 100%;
+    min-height: 800px;
+    background-color: rgb(206, 206, 217);
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+/*****************************************SECT-HEADER*/
+section>header{
+    width: 100%;
+    font-family: 'alieron','Geneva';
+    padding-left: 25px;
+    background-color: rgb(206, 206, 217);
+    color: rgb(56, 62, 70);
+    text-align: center;
+    min-height: 50px;
+}
+section>header>h2{
+    display: block;
+    padding: 10px 15px;
+}
+
+
+/*****************************************SECT-ARTICLE*/
+section>article{
+    width: 100%;
+    float: left;
+    padding-bottom: 60px;
+}
+section>article>.galeria{
+    width: 85%;
+    margin: 0 auto;
+    min-height: 200px;
+    padding: 0 5%;
+}
+article>.galeria>a>.gal_foto{
+    width: 340px;
+    max-height: 340px;
+    float: left;
+}
+article>.galeria>a>.gal_foto>img{
+    max-width: 100%;
+    min-height: 100%;
+    float: left;
+}
+article>.galeria>a>.gal_foto>.tit_catal{
+    width: 340px;
+    min-height: 340px;
+    max-height: 340px;
+    position: absolute;
+    color: rgb(41, 210, 165);
+    background-color: rgba(94, 90, 90, 0.8);
+    display: none;
+}
+article>.galeria>a>.gal_foto>.tit_catal:hover{
+    cursor: pointer;
+}
+article>.galeria>a>.gal_foto>.tit_catal>h5{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(41, 210, 165);
+    min-height: 340px;
+}
+
+/*****************************************SECT-ASIDE*/
+
+section>aside{
+    float: right;
+    width: 490px;
+    min-height: 100%;
+    background-color: rgb(206, 206, 217);
+    border-left: 10px solid rgb(120, 121, 130);
+    border-radius: 15px;
+    position: absolute;
+    right: -490px;
+    opacity: 0.95;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+}
+section>aside:hover{
+    right: 0;
+}
+
+aside>.titulo_aside{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(120, 121, 130);
+}
+aside>.titulo_aside>h2{
+    padding: 10px 20px;
+    color: #fff;
+}
+aside>.galeria{
+    width: 90%;
+    min-height: 420px;
+    background-color: rgb(206, 206, 217);
+    padding: 5% 5%;
+}
+aside>.galeria>.gal_foto{
+    width: 142px;
+    min-height: 142px;
+    max-height: 142px;
+    background-color: darkorchid;
+    float: left;
+}
+aside>.galeria>.gal_foto>img{
+    max-width: 100%;
+    min-height: 100%;
+}
+aside>.archi{
+    background-color: rgb(206, 206, 217);
+    padding: 70px;
+}
+aside>.archi>ul>li{
+    list-style: square;
+    color: rgb(120, 121, 130); 
+    margin-bottom: 10px;
+    width: 40px;
+}
+aside>.archi>ul>li:hover{
+    cursor: pointer;
+    color: black;
+}
+aside>.archi>ul>ol{
+    margin-left: 40px;
+    list-style: none;
+    display: none;
+}
+aside>.archi>ul>ol>li{
+    color: rgb(120, 121, 130);
+    margin-bottom: 5px;
+}
+aside>.archi>ul>ol>li:hover{
+    cursor: pointer;
+    color: black;
+}
+aside>.archi>ul>.muestra{
+    display: block;
+}
+/*****************************************SECT-FOOTER*/
+section>footer{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+section>footer>.sect_foot_info{
+    width: 400px;
+    min-height: 50px;
+    margin: 0 auto;
+    display: table;
+}
+section>footer>.sect_foot_info>a{
+    text-decoration: none;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+section>footer>.sect_foot_info>a:hover{
+    color: grey;
+}
+/************************************************************FOOTER*/
+footer{
+    width: 100%;
+}
+footer>.conte_footer{
+    width: 100%;
+    display: table;
+    min-height: 50px;
+    max-height: 50px;
+}
+footer>.conte_footer>.info_footer{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(56, 62, 70);
+}
+footer>.conte_footer>.info_footer>h4>a{
+    text-decoration: none;
+    color: #fff;
+}
+footer>.conte_footer>.info_footer>h4>a:hover{
+    color: grey;
+}
+/**********************************************************************************MEDIAQUERY*/
+/*PC PANTALLA 900-1300*/
+@media screen and (max-width:1300px) and (min-width:900px){
+    /*GENERAL*/
+    #contenedor{
+        width: 900px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 300px;
+        min-height: 190px;
+    }
+    header>.logo>img{
+        width: 300px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 250px;
+        max-height: 250px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 250px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+}
+/*IPAD PORTRAIT and 768-1024*/
+@media screen and (min-width: 768px) and (max-width: 900px) and (orientation: portrait){
+    /*GENERAL*/
+    #contenedor{
+        width: 768px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 150px;
+        min-height: 140px;
+    }
+    header>.logo>img{
+        width: 150px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 200px;
+        min-height: 200px;
+        max-height: 150px;
+    }
+  }
+   
+/*IPAD LANDSCAPE 768-1024*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /*GENERAL*/
+    #contenedor{
+        width: 768px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 150px;
+        min-height: 140px;
+    }
+    header>.logo>img{
+        width: 150px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 200px;
+        min-height: 200px;
+        max-height: 150px;
+    }
+}
+/*IPHONE PORTRAIT 320-768*/
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation:portrait){
+     /*GENERAL*/
+     #contenedor{
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>a>.logo{
+     max-width: 120px;
+     }
+     header>a>.logo>img{
+         max-width: 100%;
+     }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+
+    section>article>.galeria{
+        width: 100%;
+        margin: 0 auto;
+        padding: 5% 5%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 30%;
+        max-height: 150px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 30%;
+        min-height: 146px;
+        max-height: 146px;
+    }
+}
+/*IPHONE LANDSCAPE 320-768*/
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation:landscape){
+    /*GENERAL*/
+    #contenedor{
+       width: 100%;
+       margin: 0 auto;
+   }
+   /*HEADER*/
+   header>a>.logo{
+    max-width: 120px;
+}
+    header>a>.logo>img{
+    max-width: 100%;
+    }
+   /*SECTION*/
+   section{
+       width: 100%;
+   }
+   section>header{
+       width: 100%;
+   }
+   section>article>.galeria{
+       width: 85%;
+       margin: 0 auto;
+       padding: 5% 12%;
+   }
+   article>.galeria>a>.gal_foto{
+       width: 150px;
+       max-height: 150px;
+       float: left;
+   }
+   article>.galeria>a>.gal_foto>.tit_catal{
+       width: 150px;
+       min-height: 150px;
+       max-height: 150px;
+   }
+}

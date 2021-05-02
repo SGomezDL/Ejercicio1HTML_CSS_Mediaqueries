@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>BLACKGROUND</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style_contacto.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/logo_blackground/logo_blackground-02new_cuadrado.png" type="image/png">
+
+</head>
+<body>
+    <div id="contenedor">
+                                             <!--HEADER-->
+        <header id="cab">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo_blackground/logo_blackground1.png" alt="logo image">
+                </div>
+            </a>
+            
+        </header>
+                                             <!--NAV-->
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/">
+                    <img class="black" src="img/instagram_colores/Ícone-Logo-Instagram-PNG.png" alt="instagram">
+                    <img class="white" src="img/instagram_colores/Icone-Logo-Instagram-PNG-b.png" alt="instagram">
+                </a></li>
+                <li><a href="contacto.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </nav>
+                                            <!--SECTION-->
+        <section>
+            <form action="contact.jsp" method="POST">
+                <fieldset>
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" placeholder="indica tu nombre" autofocus required>
+                    <br>
+                    <label for="tlfn">Teléfono</label><br>
+                    <input type="tel" name="tlfn" id="tlfn" placeholder="indica tu telefono" required>
+                    <br>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="email" placeholder="indica tu email" required>
+                    <br>
+                    <label for="foto/video">¿Eres una Empresa?</label>
+                    <br>
+                    <input type="radio" value="si" id="empresa" name="foto" onclick="show('url')">si
+                    <input type="radio" value="no" id="empresa" name="foto" onclick="hide('url')">no
+                    <br>
+                    <fieldset class="url" id="url">
+                        <label>Indica tu URL: </label><br>
+                        <input type="url" name="url" placeholder="indica tu url...">
+                    </fieldset>
+                    <br>
+                    <label for="empresa">¿Qué trabajo quieres?</label>
+                    <br>
+                    <input type="checkbox" value="si" name="empresa" id="empresa" checked>Foto
+                    <input type="checkbox" value="no" name="empresa" id="emopresa">Video
+                    <input type="checkbox" value="no" id="empresa" name="foto" onclick="hide('url')">Pack(foto/video)
+                    <br>
+                    <label>Fecha</label>
+                    <br>
+                    <input type="datetime-local" name="fecha" id="fecha">
+                    <br>
+                    <label for="donde">¿Dónde sería el trabajo?</label><br>
+                    <select name="donde">
+                        <option value="madrid">Madrid</option>
+                        <option value="barna">Barcelona</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="bilbo">Bilbao</option>
+                        <option disabled selected>--</option>
+                    </select>
+                    <br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea rows="7" name="mensaje" placeholder="danos más detalles"></textarea>
+                </fieldset>
+                <div class="btns">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+        </form>
+        </section>
+                                                <!--FOOTER-->
+        <footer>
+            <div class="conte_footer">
+                <div class="info_footer">
+                    <h4><a href="#cab" onclick="sube()">Sube</a></h4>
+                </div>
+            </div> 
+        </footer>
+    </div>
+    <script>
+        function sube(){
+            document.body.scrollTop = 0;
+        }
+    </script>
+    <script>
+        function show(id){document.getElementById(id).style.display="block";}
+    </script>
+    <script>
+        function hide(id){document.getElementById(id).style.display="none";}
+    </script>
+</body>

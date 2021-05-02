@@ -1,0 +1,365 @@
+
+/*************************************************GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'alieron';
+    src: url(font/aileron/Aileron-SemiBold.otf);
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'alieron', 'Geneva';
+}
+#contenedor{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/*************************************************HEADER*/
+header{
+    width: 100%;
+    background-color: rgb(56, 62, 70);
+}
+header>a>.logo{
+    width: 300px;
+}
+header>a>.logo>img{
+    width: 200px;
+    margin: 20px;
+}
+/*NAVEGDAOR*/
+nav{
+    padding-top: 5px;
+    min-height: 25px;
+    background-color: rgb(56, 62, 70);
+}
+nav>ul{
+    list-style: none;
+}
+nav>ul>li{
+    float: right;
+    margin: 0 10px;
+}
+nav>ul:last-child{
+    margin-right: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'alieron', 'Geneva';
+    display: block;
+}
+
+nav>ul>li>a .black{
+    display: block;
+}
+nav>ul>li>a .white{
+    display: none;
+}
+nav>ul>li>a:hover{
+    margin-right: 5px;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    color: rgb(19, 18, 16);
+}
+nav>ul>li>a:hover .black{
+    display: none;
+}
+nav>ul>li>a:hover .white{
+    display: block;
+}
+nav>ul>li>a img{
+    width: 20px;
+}
+/***************************************************************SECTION*/
+section{
+    width: 100%;
+    background-color: rgb(206, 206, 217);
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+/************************************************************FORMULARIO**/
+fieldset{
+    width: 60%;
+    margin: 40px auto;
+    padding: 10px 20px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    color: rgb(56, 62, 70);
+    font-size: 0.9em;
+}
+fieldset>label{
+    width: 70px;
+    padding: 5px 0 5px 10px;
+    margin-bottom: 5px;
+}
+fieldset>input{
+    width: 50%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+fieldset>input[type=radio], [type=checkbox]{
+    width: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 0.9em
+}
+fieldset>select{
+    width: 50%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+fieldset>textarea{
+    width: 50%;
+    padding: 5px 10px;
+}
+fieldset>.url{
+    display: none;
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+    border: none;
+}
+.btns{
+    width: 60%;
+    margin: 10px auto;
+}
+.btns>input{
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+
+.btns>input[type=submit]:hover{
+    background-color: rgb(56, 62, 70);
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.btns>input[type=reset]:hover{
+    background: rgb(56, 62, 70);
+    color: crimson;
+    box-shadow: 2px 2px 2px rgba(220, 20, 60, 0.6);
+    cursor: pointer;
+}
+
+/************************************************************FOOTER*/
+footer{
+    width: 100%;
+    background-color: aqua;
+}
+footer>.conte_footer{
+    width: 100%;
+    display: table;
+    min-height: 50px;
+    max-height: 50px;
+}
+footer>.conte_footer>.info_footer{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(56, 62, 70);
+}
+footer>.conte_footer>.info_footer>h4>a{
+    text-decoration: none;
+    color: #fff;
+}
+footer>.conte_footer>.info_footer>h4>a:hover{
+    color: grey;
+}
+/**********************************************************************************MEDIAQUERY*/
+/*PC PANTALLA 900-1300*/
+@media screen and (max-width:1300px) and (min-width:900px){
+    /*GENERAL*/
+    #contenedor{
+        width: 900px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 300px;
+        min-height: 190px;
+    }
+    header>.logo>img{
+        width: 300px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+
+}
+/*IPAD PORTRAIT and 768-1024*/
+@media screen and (min-width: 768px) and (max-width: 900px) and (orientation: portrait){
+    /*GENERAL*/
+    #contenedor{
+        width: 768px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 150px;
+        min-height: 140px;
+    }
+    header>.logo>img{
+        width: 150px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+    fieldset>input{
+        width: 90%;
+    }
+     fieldset>select{
+     width: 97%;
+     }
+     fieldset>input[type=radio], [type=checkbox]{
+         width:40px;
+     }
+     fieldset>textarea{
+         width: 90%;
+     }
+ 
+     fieldset>.url{
+     display: none;
+     width: 90%;
+     }
+
+  }
+   
+/*IPAD LANDSCAPE 768-1024*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /*GENERAL*/
+    #contenedor{
+        width: 768px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 150px;
+        min-height: 140px;
+    }
+    header>.logo>img{
+        width: 150px;
+        margin: 20px;
+    }
+    
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+    fieldset>input{
+        width: 90%;
+    }
+     fieldset>select{
+     width: 97%;
+     }
+     fieldset>input[type=radio], [type=checkbox]{
+         width:40px;
+     }
+     fieldset>textarea{
+         width: 90%;
+     }
+ 
+     fieldset>.url{
+     display: none;
+     width: 90%;
+     }
+
+}
+/*IPHONE PORTRAIT 320-768*/
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation:portrait){
+     /*GENERAL*/
+     #contenedor{
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>a>.logo{
+        max-width: 120px;
+    }
+    header>a>.logo>img{
+        max-width: 100%;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+    fieldset>input{
+        width: 90%;
+    }
+     fieldset>select{
+     width: 97%;
+     }
+     fieldset>input[type=radio], [type=checkbox]{
+         width:20px;
+     }
+     fieldset>textarea{
+         width: 90%;
+     }
+ 
+     fieldset>.url{
+     display: none;
+     width: 90%;
+     }
+
+}
+/*IPHONE LANDSCAPE 320-768*/
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation:landscape){
+    /*GENERAL*/
+    #contenedor{
+       width: 100%;
+       margin: 0 auto;
+   }
+   /*HEADER*/
+   header>a>.logo{
+    max-width: 120px;
+    }
+    header>a>.logo>img{
+    max-width: 100%;
+    }
+   /*SECTION*/
+   section{
+       width: 100%;
+   }
+   section>header{
+       width: 100%;
+   }
+   fieldset>input{
+       width: 90%;
+   }
+    fieldset>select{
+    width: 97%;
+    }
+    fieldset>input[type=radio], [type=checkbox]{
+        width:20px;
+    }
+    fieldset>textarea{
+        width: 90%;
+    }
+
+    fieldset>.url{
+    display: none;
+    width: 90%;
+    }
+}

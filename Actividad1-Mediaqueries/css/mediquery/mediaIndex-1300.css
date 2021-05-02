@@ -1,0 +1,64 @@
+/*GENERAL*/
+#contenedor{
+    width: 1200px;
+}
+/*HEADER*/
+header>.logo{
+    width: 300px;
+}
+header>.logo>img{
+    width: 200px;
+    margin: 20px;
+}
+/*SECTION*/
+section{
+    width: 100%;
+}
+section>header{
+    width: 100%;
+}
+section>article{
+    width: 100%;
+    float: left;
+}
+section>article>.galeria{
+    width: 85%;
+    padding: 5% 5%;
+}
+
+article>.galeria>a>.gal_foto{
+    width: 340px;
+    max-height: 340px;
+    float: left;
+}
+article>.galeria>a>.gal_foto>.tit_catal{
+    width: 340px;
+    min-height: 340px;
+    max-height: 340px;
+}
+section>aside{
+    float: right;
+    width: 490px;
+    position: absolute;
+    right: -490px;
+    opacity: 0.95;
+}
+aside>.galeria{
+    width: 90%;
+    padding: 5% 5%;
+}
+aside>.galeria>.gal_foto{
+    width: 142px;
+    min-height: 142px;
+    max-height: 142px;
+    float: left;
+}
+aside>.archi{
+    padding: 70px;
+}
+aside>.archi>ul>ol{
+    margin-left: 40px;
+}
+section>footer>.sect_foot_info{
+    width: 400px;
+}

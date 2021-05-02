@@ -1,0 +1,39 @@
+
+    /*GENERAL*/
+    #contenedor{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 300px;
+        min-height: 190px;
+    }
+    header>.logo>img{
+        width: 300px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 250px;
+        max-height: 250px;
+        background-color: darkorchid;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 250px;
+        min-height: 250px;
+        max-height: 250px;
+    }

@@ -1,0 +1,347 @@
+/*************************************************GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'alieron';
+    src: url(font/aileron/Aileron-SemiBold.otf);
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'alieron', 'Geneva';
+}
+#contenedor{
+    margin: 0 auto;
+    width: 1200px;
+    background-color: blueviolet;
+}
+/*************************************************HEADER*/
+header{
+    width: 100%;
+    background-color: rgb(56, 62, 70);
+}
+header>a>.logo{
+    width: 300px;
+}
+header>a>.logo>img{
+    width: 200px;
+    margin: 20px;
+}
+/*NAVEGDAOR*/
+nav{
+    padding-top: 5px;
+    min-height: 25px;
+    background-color: rgb(56, 62, 70);
+}
+nav>ul{
+    list-style: none;
+}
+nav>ul>li{
+    float: right;
+    margin: 0 10px;
+}
+nav>ul:last-child{
+    margin-right: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'alieron', 'Geneva';
+    display: block;
+}
+
+nav>ul>li>a .black{
+    display: block;
+}
+nav>ul>li>a .white{
+    display: none;
+}
+nav>ul>li>a:hover{
+    margin-right: 5px;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    color: rgb(19, 18, 16);
+}
+nav>ul>li>a:hover .black{
+    display: none;
+}
+nav>ul>li>a:hover .white{
+    display: block;
+}
+nav>ul>li>a img{
+    width: 20px;
+}
+/***************************************************************SECTION*/
+section{
+    width: 100%;
+    background-color: rgb(206, 206, 217);
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+/*****************************************SECT-HEADER*/
+section>header{
+    width: 100%;
+    background-color: rgb(206, 206, 217);
+    font-family: 'alieron','Geneva';
+}
+section>header>h2{
+    display: block;
+    padding: 10px 15px;
+}
+/*****************************************SECT-ARTICLE*/
+section>article{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 10px;
+}
+section>article>p{
+    margin-bottom: 40px; 
+    font-size: 1.2em;  
+}
+
+/*****************************************SECT-FOOTER*/
+section>.foot_logo{
+    width: 100%;
+    min-height: 200px;
+}
+section>.foot_logo>.about_logo{
+    width: 60%;
+    min-height: 150px;
+    margin: 0 auto;
+}
+section>.foot_logo>.about_logo>img{
+    width: 100%;
+}
+
+/************************************************************FOOTER*/
+footer{
+    width: 100%;
+    font-family: 'alieron', 'Geneva';
+}
+footer>.conte_footer{
+    width: 100%;
+    display: table;
+    min-height: 50px;
+    max-height: 50px;
+}
+footer>.conte_footer>.info_footer{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(56, 62, 70);
+}
+footer>.conte_footer>.info_footer>h4>a{
+    text-decoration: none;
+    color: #fff;
+}
+footer>.conte_footer>.info_footer>h4>a:hover{
+    color: grey;
+}
+/**********************************************************************************MEDIAQUERY*/
+/*PC PANTALLA 900-1300*/
+@media screen and (max-width:1300px) and (min-width:900px){
+    /*GENERAL*/
+    #contenedor{
+        width: 900px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 300px;
+        min-height: 190px;
+    }
+    header>.logo>img{
+        width: 300px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 250px;
+        max-height: 250px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 250px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+}
+/*IPAD PORTRAIT and 768-1024*/
+@media screen and (min-width: 768px) and (max-width: 900px) and (orientation: portrait){
+    /*GENERAL*/
+    #contenedor{
+        width: 768px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 150px;
+        min-height: 140px;
+    }
+    header>.logo>img{
+        width: 150px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 200px;
+        min-height: 200px;
+        max-height: 150px;
+    }
+  }
+   
+/*IPAD LANDSCAPE 768-1024*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /*GENERAL*/
+    #contenedor{
+        width: 768px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 150px;
+        min-height: 140px;
+    }
+    header>.logo>img{
+        width: 150px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+    section>article{
+        text-align: justify;
+    }
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 200px;
+        min-height: 200px;
+        max-height: 150px;
+    }
+}
+/*IPHONE PORTRAIT 320-768*/
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation:portrait){
+     /*GENERAL*/
+     #contenedor{
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>a>.logo{
+     max-width: 120px;
+     }
+     header>a>.logo>img{
+         max-width: 100%;
+     }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+    section>article{
+        text-align: justify;
+    }
+    section>article>.galeria{
+        width: 85%;
+        margin: 0 auto;
+        padding: 5% 12%;
+    }
+    article>.galeria>a>.gal_foto{
+        width: 150px;
+        max-height: 150px;
+        float: left;
+    }
+    article>.galeria>a>.gal_foto>.tit_catal{
+        width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+}
+/*IPHONE LANDSCAPE 320-768*/
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation:landscape){
+    /*GENERAL*/
+    #contenedor{
+       width: 100%;
+       margin: 0 auto;
+   }
+   /*HEADER*/
+   header>a>.logo{
+    max-width: 120px;
+    }
+    header>a>.logo>img{
+        max-width: 100%;
+    }
+   /*SECTION*/
+   section{
+       width: 100%;
+   }
+   section>header{
+       width: 100%;
+   }
+
+   section>article>.galeria{
+       width: 85%;
+       margin: 0 auto;
+       padding: 5% 12%;
+   }
+   article>.galeria>a>.gal_foto{
+       width: 150px;
+       max-height: 150px;
+       float: left;
+   }
+   article>.galeria>a>.gal_foto>.tit_catal{
+       width: 150px;
+       min-height: 150px;
+       max-height: 150px;
+   }
+}

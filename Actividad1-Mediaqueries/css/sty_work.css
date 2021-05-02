@@ -1,0 +1,597 @@
+/*************************************************GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'alieron';
+    src: url(font/aileron/Aileron-SemiBold.otf);
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'alieron', 'Geneva';
+}
+#contenedor{
+    margin: 0 auto;
+    width: 1200px;
+}
+/*************************************************HEADER*/
+header{
+    width: 100%;
+    background-color: rgb(56, 62, 70);
+}
+header>a>.logo{
+    width: 300px;
+}
+header>a>.logo>img{
+    width: 200px;
+    margin: 20px;
+}
+/*NAVEGDAOR*/
+nav{
+    padding-top: 5px;
+    min-height: 25px;
+    background-color: rgb(56, 62, 70);
+}
+nav>ul{
+    list-style: none;
+}
+nav>ul>li{
+    float: right;
+    margin: 0 10px;
+}
+nav>ul:last-child{
+    margin-right: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'alieron', 'Geneva';
+    display: block;
+}
+
+nav>ul>li>a .black{
+    display: block;
+}
+nav>ul>li>a .white{
+    display: none;
+}
+nav>ul>li>a:hover{
+    margin-right: 5px;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    color: rgb(19, 18, 16);
+}
+nav>ul>li>a:hover .black{
+    display: none;
+}
+nav>ul>li>a:hover .white{
+    display: block;
+}
+nav>ul>li>a img{
+    width: 20px;
+}
+/***************************************************************SECTION*/
+section{
+    width: 100%;
+    min-height: 800px;
+    background-color: rgb(206, 206, 217);
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+/*****************************************SECT-ARTICLE*/
+.work>article{
+    width: 90%;
+    margin: 40px auto;
+    min-height: 2000px;
+}
+/*********IMAGEN-GRANDE*/
+.work>article>.img_prin{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.work>article>.img_prin>img{
+    width: 100%;
+}
+/*********GALERIA*/
+.work>article>.galeria{
+    width: 95%;
+    margin: 0 auto;
+    min-height: 200px;
+}
+/*********GALERIA-FOTO*/
+.work>article>.galeria>.gal_foto{
+    background-color: darkorchid;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.work>article>.galeria>.gal_foto>img{
+    max-width: 100%;
+    min-height: 100%;
+    float: left;
+}
+.work>article>.galeria>.ancha{
+    width: 350px;
+    min-height: 220px;
+    max-height: 220px;
+}  
+.work>article>.galeria>.ancha>img{
+    width: 100%;
+    max-height: 220px;
+    min-height: 220px;
+}
+.work>article>.galeria>.delgada{
+    width: 150px;
+    min-height: 220px;
+    max-height: 220px;
+} 
+.work>article>.galeria>.delgada>img{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}
+.work>article>.galeria>.ancha2{
+    width: 400px;
+    min-height: 300px;
+    max-height: 300px;
+}  
+.work>article>.galeria>.ancha2>img{
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+}
+.work>article>.galeria>.delgada2{
+    width: 200px;
+    min-height: 300px;
+    max-height: 300px;
+} 
+.work>article>.galeria>.delgada2>img{
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+}
+.work>article>.galeria>.media{
+    width: 505px;
+}
+.work>article>.galeria>.media>img{
+    width: 100%;
+}
+/************************************************************FOOTER*/
+footer{
+    width: 100%;
+}
+footer>.conte_footer{
+    width: 100%;
+    display: table;
+    min-height: 50px;
+    max-height: 50px;
+}
+footer>.conte_footer>.info_footer{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(56, 62, 70);
+}
+footer>.conte_footer>.info_footer>h4>a{
+    text-decoration: none;
+    color: #fff;
+}
+footer>.conte_footer>.info_footer>h4>a:hover{
+    color: grey;
+}
+footer>.conte_footer>.info_footer>h4>a>img{
+    width: 13px;
+    max-height: 13px;
+    margin:0 5px;
+    background-color: #fff;
+}
+footer>.conte_footer>.info_footer>h4>a:hover img{
+    opacity: 0.7;
+    background-color: grey;
+}
+/**********************************************************************************MEDIAQUERY*/
+/*PC PANTALLA 900-1300*/
+@media screen and (max-width:1300px) and (min-width:900px){
+    /*GENERAL*/
+    #contenedor{
+        width: 900px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    header>.logo{
+        width: 300px;
+        min-height: 190px;
+    }
+    header>.logo>img{
+        width: 300px;
+        margin: 20px;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    section>header{
+        width: 100%;
+    }
+    /*********GALERIA*/
+    .work>article>.galeria{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 200px;
+    }
+    .work>article>.galeria>.gal_foto{
+    background-color: darkorchid;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    }
+    .work>article>.galeria>.ancha{
+    width: 36%;
+    min-height: 240px;
+    max-height: 240px;
+    }  
+    .work>article>.galeria>.ancha>img{
+    width: 100%;
+    max-height: 240px;
+    min-height: 240px;
+    }
+    .work>article>.galeria>.delgada{
+    width: 12.76%;
+    min-height: 240px;
+    max-height: 240px;
+    } 
+    .work>article>.galeria>.delgada>img{
+    width: 100%;
+    min-height: 240px;
+    max-height: 240px;
+    }
+    .work>article>.galeria>.ancha2{
+        width: 40%;
+        min-height: 290px;
+        max-height: 290px;
+    }  
+    .work>article>.galeria>.ancha2>img{
+        width: 100%;
+        min-height: 290px;
+        max-height: 290px;
+    }
+    .work>article>.galeria>.delgada2{
+        width: 19.1%;
+        min-height: 290px;
+        max-height: 290px;
+    } 
+    .work>article>.galeria>.delgada2>img{
+        width: 100%;
+        min-height: 290px;
+        max-height: 290px;
+    }
+    .work>article>.galeria>.media{
+        width: 49%;
+        padding-right: 1px;
+    }
+    .work>article>.galeria>.media>img{
+        width: 100%;
+    }
+}
+/*IPAD LANDSCAPE 768-1024*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
+    /*GENERAL*/
+    #contenedor{
+       width: 768px;
+       margin: 0 auto;
+   }
+   /*HEADER*/
+   header>.logo{
+       width: 100px;
+       min-height: 110px;
+   }
+   header>.logo>img{
+       width: 100px;
+       margin: 20px;
+   }
+   /*SECTION*/
+   section{
+       width: 100%;
+   }
+   section>header{
+       width: 100%;
+   }
+/*********GALERIA*/
+    .work>article>.galeria{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 200px;
+    }
+    .work>article>.galeria>.gal_foto{
+    background-color: darkorchid;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    }
+    .work>article>.galeria>.ancha{
+    width: 34%;
+    min-height: 150px;
+    max-height: 150px;
+    }  
+    .work>article>.galeria>.ancha>img{
+    width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+    }
+    .work>article>.galeria>.delgada{
+    width: 14.55%;
+    min-height: 150px;
+    max-height: 150px;
+    } 
+    .work>article>.galeria>.delgada>img{
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    }
+    .work>article>.galeria>.ancha2{
+        width: 39.29%;
+        min-height: 220px;
+        max-height: 220px;
+    }  
+    .work>article>.galeria>.ancha2>img{
+        width: 100%;
+        min-height: 220px;
+        max-height: 220px;
+    }
+    .work>article>.galeria>.delgada2{
+        width: 19.23%;
+        min-height: 220px;
+        max-height: 220px;
+    } 
+    .work>article>.galeria>.delgada2>img{
+        width: 100%;
+        min-height: 220px;
+        max-height: 220px;
+    }
+    .work>article>.galeria>.media{
+        width: 49%;
+        padding-right: 1px;
+    }
+    .work>article>.galeria>.media>img{
+        width: 100%;
+    }
+
+}
+/*IPAD LANDSCAPE 320-768*/
+    @media screen and (min-width: 320px) and (max-width: 767px) and (orientation:portrait){
+        /*GENERAL*/
+        #contenedor{
+        width: 100%; 
+    }
+    /*HEADER*/
+    header>a>.logo{
+        max-width: 120px;
+    }
+    header>a>.logo>img{
+        max-width: 100%;
+    }
+    /*SECTION*/
+    section{
+        width: 100%;
+    }
+    /*********GALERIA*/
+    .work>article>.galeria{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 200px;
+    }
+    .work>article>.galeria>.gal_foto{
+        background-color: darkorchid;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .work>article>.galeria>.ancha{
+        width: 62.78%;
+        min-height: 170px;
+        max-height: 170px;
+    }  
+    .work>article>.galeria>.ancha>img{
+        width: 100%;
+        max-height: 170px;
+        min-height: 170px;
+    }
+    .work>article>.galeria>.delgada{
+        width: 32%;
+        min-height: 170px;
+        max-height: 170px;
+    } 
+    .work>article>.galeria>.delgada>img{
+        width: 100%;
+        min-height: 170px;
+        max-height: 170px;
+    }
+    .work>article>.galeria>.ancha2{
+        width: 100%;
+        min-height: 220px;
+        max-height: 220px;
+    }  
+    .work>article>.galeria>.ancha2>img{
+        width: 100%;
+        min-height: 220px;
+        max-height: 220px;
+    }
+    .work>article>.galeria>.delgada2{
+        width: 31.22%;
+        min-height: 220px;
+        max-height: 220px;
+    } 
+    .work>article>.galeria>.delgada2>img{
+        width: 100%;
+        min-height: 220px;
+        max-height: 220px;
+    }
+    .work>article>.galeria>.media{
+        width: 100%;
+        padding-right: 1px;
+    }
+    .work>article>.galeria>.media>img{
+        width: 100%;
+    }
+
+}
+/*IPHONE LANDSCAPE 320-768*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation:landscape){
+    /*GENERAL*/
+    #contenedor{
+    width: 100%; 
+}
+/*HEADER*/
+header>a>.logo{
+    max-width: 120px;
+}
+header>a>.logo>img{
+    max-width: 100%;
+}
+/*SECTION*/
+section{
+    width: 100%;
+}
+/*********GALERIA*/
+.work>article>.galeria{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 200px;
+}
+.work>article>.galeria>.gal_foto{
+    background-color: darkorchid;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.work>article>.galeria>.ancha{
+    width: 62.78%;
+    min-height: 170px;
+    max-height: 170px;
+}  
+.work>article>.galeria>.ancha>img{
+    width: 100%;
+    max-height: 170px;
+    min-height: 170px;
+}
+.work>article>.galeria>.delgada{
+    width: 32%;
+    min-height: 170px;
+    max-height: 170px;
+} 
+.work>article>.galeria>.delgada>img{
+    width: 100%;
+    min-height: 170px;
+    max-height: 170px;
+}
+.work>article>.galeria>.ancha2{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}  
+.work>article>.galeria>.ancha2>img{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}
+.work>article>.galeria>.delgada2{
+    width: 31.22%;
+    min-height: 220px;
+    max-height: 220px;
+} 
+.work>article>.galeria>.delgada2>img{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}
+.work>article>.galeria>.media{
+    width: 100%;
+    padding-right: 1px;
+}
+.work>article>.galeria>.media>img{
+    width: 100%;
+}
+
+}
+/*IPHONE LANDSCAPE 320-768*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation:portrait){
+    /*GENERAL*/
+    #contenedor{
+    width: 100%; 
+}
+/*HEADER*/
+header>a>.logo{
+    max-width: 120px;
+}
+header>a>.logo>img{
+    max-width: 100%;
+}
+/*SECTION*/
+section{
+    width: 100%;
+}
+/*********GALERIA*/
+.work>article>.galeria{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 200px;
+}
+.work>article>.galeria>.gal_foto{
+    background-color: darkorchid;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.work>article>.galeria>.ancha{
+    width: 62.78%;
+    min-height: 170px;
+    max-height: 170px;
+}  
+.work>article>.galeria>.ancha>img{
+    width: 100%;
+    max-height: 170px;
+    min-height: 170px;
+}
+.work>article>.galeria>.delgada{
+    width: 32%;
+    min-height: 170px;
+    max-height: 170px;
+} 
+.work>article>.galeria>.delgada>img{
+    width: 100%;
+    min-height: 170px;
+    max-height: 170px;
+}
+.work>article>.galeria>.ancha2{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}  
+.work>article>.galeria>.ancha2>img{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}
+.work>article>.galeria>.delgada2{
+    width: 31.22%;
+    min-height: 220px;
+    max-height: 220px;
+} 
+.work>article>.galeria>.delgada2>img{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}
+.work>article>.galeria>.media{
+    width: 100%;
+    padding-right: 1px;
+}
+.work>article>.galeria>.media>img{
+    width: 100%;
+}
+
+}
